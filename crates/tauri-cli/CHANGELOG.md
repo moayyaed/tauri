@@ -1,5 +1,17 @@
 # Changelog
 
+## \[2.12.0]
+
+### New Features
+
+- [`32d81661e`](https://www.github.com/tauri-apps/tauri/commit/32d81661eedb7524b36f4c422606fa1e93ac917b) ([#15372](https://www.github.com/tauri-apps/tauri/pull/15372) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Added `bundle.windows.bundleVCRuntime` to copy the Visual C++ runtime DLLs into Windows MSI and NSIS installers. The bundler locates the runtime through `VCTOOLS_REDIST_DIR` or the bundled `vswhere.exe`.
+- [`32d81661e`](https://www.github.com/tauri-apps/tauri/commit/32d81661eedb7524b36f4c422606fa1e93ac917b) ([#15372](https://www.github.com/tauri-apps/tauri/pull/15372) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Added `build.windows.staticVCRuntime` to control MSVC static runtime linking. The `STATIC_VCRUNTIME` environment variable is now deprecated and emits a migration warning when used.
+
+### Dependencies
+
+- Upgraded to `tauri-bundler@2.10.0`
+- Upgraded to `tauri-utils@2.10.0`
+
 ## \[2.11.1]
 
 ### Dependencies
